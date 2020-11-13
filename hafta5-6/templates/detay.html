@@ -1,0 +1,26 @@
+{% extends "tema.html" %}
+
+{%block baslik %}
+
+{% endblock %}
+
+{%block icerik%}
+
+{% if garaba!=None %}
+<img height="100" src="../static/img/{{garaba.resimyolu}}"><br>
+
+{{garaba.marka}}<br>
+
+{{garaba.model}}<br>
+
+{{garaba.beygir}}<br>
+
+{{garaba.icerik}}<br>
+
+{{garaba.renk}}<br>
+{% else %}
+aradığınız id' ye sahip araba bulunamadı
+{% endif %}
+
+
+{% endblock %}

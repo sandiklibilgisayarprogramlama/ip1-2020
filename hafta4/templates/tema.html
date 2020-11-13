@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/stil.css" >
+    <title>tema</title>
+</head>
+<body>
+    <div id="banner" >
+        Sandıklı Myo
+    </div>
+    <div>
+        <div id="menu" >
+            <a href="/" >Anasayfa</a>
+            <a href="/hakkinda" >Hakkinda</a>
+            <a href="/iletisim" >iletisim</a>
+        </div>
+        <div id="icerik" >
+            {% block icerik %}
+            {% endblock %}
+        </div>
+    </div>
+    <div id="footer" >
+        Sandıklımyo
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+body{
+    background-color: white;
+    font-size: 14px;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#banner{
+    margin: 0px auto;
+    height: 150px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rebeccapurple;
+    color: white;
+}
+
+#menu{
+    padding: 10px;
+    float: left;
+    width: 100px;
+    height: 200px;
+    background-color: orange;
+}
+
+#icerik{
+    height: 200px;
+
+    padding: 10px;
+}
+
+#footer{
+    height: 30px;
+    text-align: center;
+    background-color: yellowgreen;
+}

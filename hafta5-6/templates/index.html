@@ -1,0 +1,23 @@
+{% extends "tema.html" %}
+
+{% block baslik %}
+    sahibinden
+{% endblock %}
+
+{% block icerik %}
+
+<table>
+    <thead>
+        <th>Resim</th>
+        <th>Marka Adı</th>
+    </thead>
+{% for a in araclar %}
+<tr>
+    <td >
+        <img height="100" src="static/img/{{a.resimyolu}}" >
+    </td><td><a href="/detay/{{a.id}}" >{{ a.marka }}</a> </td>
+</tr>
+{% endfor %}
+</table>
+
+{% endblock %}
