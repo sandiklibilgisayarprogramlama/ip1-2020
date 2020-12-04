@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="/kullanicigiriskontrol" method="post" >
+        <div>
+            <input name="input_kadi" type="text" placeholder="Kullanıcı adı">
+        </div>
+        <div>
+            <input name="input_sifre" type="password" placeholder="şifre">
+        </div>
+        <div>
+            <input type="submit" value="Giriş yap">
+        </div>
+    </form>
+
+    {% if hata!="" %}
+        <span style="color: red;" >{{hata}}</span>
+    {% endif %}
+</body>
+</html>
