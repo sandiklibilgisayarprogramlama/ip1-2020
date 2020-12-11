@@ -1,0 +1,40 @@
+{% extends "tema.html" %}
+
+{%block baslik %}
+Yazı Ekle
+{% endblock %}
+
+
+{% block icerik %}
+<div class="row text-center" >
+    <h2>Yeni Yazı Ekle</h2>
+</div>
+
+<form method="POST" action="/yaziekle">
+<div class="row" >
+    <div >
+        <input type="text" name="inp_baslik" placeholder="Yazı Başlığı" >
+    </div>
+</div>
+<div class="row mt-2" >
+    <div >
+        <textarea class="form-control" name="text_icerik" placeholder="Yazı İçeriği" ></textarea>
+    </div>
+</div>
+<div class="row mt-2" >
+    <div >
+        <input class="form-control" type="text" name="inp_etiket" placeholder="Yazı Etiket" >
+    </div>
+</div>
+<div class="row mt-2" >
+    <div >
+        <input class="form-control" type="date" name="inp_tarih" placeholder="Yazı Tarihi" >
+    </div>
+</div>
+<div class="row mt-2" >
+    <div >
+        <input type="submit" class="btn btn-success" value="Kaydet">
+    </div>
+</div>
+</form>
+{% endblock %}

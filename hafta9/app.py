@@ -24,6 +24,5 @@ def girisKontrol():
     else:
         return render_template("anasayfa.html",hata="Kadi veya şifreniz hatalı")
 
-
 if __name__ == "__main__":
     app.run(debug=True)

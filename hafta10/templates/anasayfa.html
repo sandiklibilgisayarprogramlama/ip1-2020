@@ -1,0 +1,16 @@
+{% extends "tema.html" %}
+
+{%block baslik %}
+Anasayfa
+{% endblock %}
+
+{% block icerik %}
+<div class="row" >
+    <h1>Bloguma Hoşgeliniz</h1>
+</div>
+<div class="row" >
+    {% for i in sayfayazilistesi %}
+    {{i}}<br><br>
+    {% endfor %}
+</div>
+{% endblock %}

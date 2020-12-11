@@ -1,0 +1,3 @@
+merhaba|ilk yazim|selam|2020-12-15
+merhaba|ilk yazim|selam|2020-12-15
+vscode|vscodeda flask çalışırken jinja template renklendirmesi için biasdupa tarafından yazılan django template eklentisini kullanabikirsiniz.|vscode|2020-12-17
