@@ -10,7 +10,7 @@ Anasayfa
 </div>
 <div class="row" >
     {% for i in sayfayazilistesi %}
-    {{i}}<br><br>
+    <a href="/detay/{{i.id}}" >{{i.yazibaslik}}</a><br><br>
     {% endfor %}
 </div>
 {% endblock %}
