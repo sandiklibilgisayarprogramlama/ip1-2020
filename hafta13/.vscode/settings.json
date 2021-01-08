@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/caner/miniconda3/envs/internetprogramlama/bin/python"
+    "python.pythonPath": "/home/caner/miniconda3/envs/internetprogramlama/bin/python",
+    "jupyter.jupyterServerType": "local"
 }
