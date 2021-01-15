@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap</title>
+</head>
+<body>
+    <form action="/login" method="POST" >
+        <input type="text" name="inp_uname" placeholder="User Name"><br>
+        <input type="text" name="inp_pass" placeholder="Password"><br>
+        <input type="submit" value="Giriş Yap">
+    </form>
+    {% with mesaj=get_flashed_messages() %}
+        {% if mesaj %}
+            <span style="color: red;" > {{mesaj[0]}}</span>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

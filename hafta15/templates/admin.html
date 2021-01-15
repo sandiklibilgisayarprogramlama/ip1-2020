@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+</head>
+<body>
+    {% with mesaj=get_flashed_messages() %}
+        {% if mesaj %}
+        <span style="color: green;" > {{mesaj[0]}}</span>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>
